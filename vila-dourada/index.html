@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Roboto:wght@400;500&display=swap">
   <link rel="stylesheet" href="style/main.css">
+  <script src="scripts/open-Lightbox.js" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Hostel","name":"Vila Dourada Hostel","slogan":"Hospedagem com a essência do Cerrado","image":"img/Logo-Vila-Dourada.png","address":{"@type":"PostalAddress","streetAddress":"Rua Francisco Salermo, Quadra 65, Lote 18, Setor Paraisinho","addressLocality":"Alto Paraíso de Goiás","addressRegion":"GO","addressCountry":"BR"}}
   </script>
@@ -62,56 +63,58 @@
       <div class="grid">
 
         <article class="card">
-          <div class="card__img"><img src="img/dormitorio-misto-8.jpg" alt="Dormitório misto com 8 camas" loading="lazy" onerror="this.remove()"></div>
+          <div class="card__img"><img src="img/dormitorio-misto-A.jpg" alt="Dormitório 1 - misto com 4 camas" loading="lazy" onerror="this.remove()"></div>
           <div class="card__b">
-            <h3>Dormitório misto</h3>
-            <p class="meta">8 camas</p>
-            <span class="beds" style="--n:8" role="img" aria-label="8 camas"></span>
-            <!-- PREÇO A DEFINIR: substitua XX pelo valor -->
-            <p class="price">R$ <b>XX</b> <small>por cama, por noite</small></p>
-            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20misto%20de%208%20camas.%20Datas%3A%20">Reservar esta cama</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__img"><img src="img/dormitorio-misto-6.jpg" alt="Dormitório misto com 6 camas" loading="lazy" onerror="this.remove()"></div>
-          <div class="card__b">
-            <h3>Dormitório misto</h3>
-            <p class="meta">6 camas</p>
-            <span class="beds" style="--n:6" role="img" aria-label="6 camas"></span>
-            <!-- PREÇO A DEFINIR -->
-            <p class="price">R$ <b>XX</b> <small>por cama, por noite</small></p>
-            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20misto%20de%206%20camas.%20Datas%3A%20">Reservar esta cama</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__img"><img src="img/dormitorio-feminino-4.jpg" alt="Dormitório feminino com 4 camas" loading="lazy" onerror="this.remove()"></div>
-          <div class="card__b">
-            <h3>Dormitório feminino</h3>
+            <h3>Dormitório A (misto)</h3>
             <p class="meta">4 camas</p>
             <span class="beds" style="--n:4" role="img" aria-label="4 camas"></span>
-            <!-- PREÇO A DEFINIR -->
-            <p class="price">R$ <b>XX</b> <small>por cama, por noite</small></p>
-            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20feminino%20de%204%20camas.%20Datas%3A%20">Reservar esta cama</a>
+            <p class="price">R$ <b>100,00</b> <small>por cama, por noite</small></p>
+            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20misto%20de%20A.">Reservar esta cama</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="img/dormitorio-misto-B.jpg" alt="Dormitório misto com 4 camas" loading="lazy" onerror="this.remove()"></div>
+          <div class="card__b">
+            <h3>Dormitório B (misto)</h3>
+            <p class="meta">4 camas</p>
+            <span class="beds" style="--n:4" role="img" aria-label="4camas"></span>
+            <p class="price">R$ <b>100,00</b> <small>por cama, por noite</small></p>
+            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20misto%20B.">Reservar esta cama</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="img/dormitorio-feminino.jpg" alt="Dormitório feminino com 3 camas" loading="lazy" onerror="this.remove()"></div>
+          <div class="card__b">
+            <h3>Dormitório feminino</h3>
+            <p class="meta">3 camas</p>
+            <span class="beds" style="--n:3" role="img" aria-label="3 camas"></span>
+            <p class="price">R$ <b>100,00</b> <small>por cama, por noite</small></p>
+            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20uma%20cama%20no%20dormit%C3%B3rio%20feminino%20de%204%20camas.">Reservar esta cama</a>
           </div>
         </article>
 
         <article class="card">
           <div class="card__img"><img src="img/quarto-privativo.jpg" alt="Quarto privativo" loading="lazy" onerror="this.remove()"></div>
           <div class="card__b">
-            <h3>Quarto privativo</h3>
+            <h3>Suíte privativa</h3>
             <p class="meta">Para casais ou duplas</p>
-            <span class="beds" style="--n:2" role="img" aria-label="2 camas"></span>
-            <!-- PREÇO A DEFINIR -->
-            <p class="price">R$ <b>XX</b> <small>por quarto, por noite</small></p>
-            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20o%20quarto%20privativo.%20Datas%3A%20">Reservar este quarto</a>
+            <span class="beds" style="--n:1" role="img" aria-label="1 camas"></span>
+            <p class="price">R$ <b>300,00</b> <small>por quarto, por noite</small></p>
+            <a class="btn btn--fill btn--full" href="https://wa.me/5561992995396?text=Ol%C3%A1!%20Quero%20reservar%20o%20quarto%20privativo.">Reservar este quarto</a>
           </div>
         </article>
 
       </div>
     </div>
   </section>
+
+  <!-- Lightbox para ampliar fotos -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox__close">&times;</span>
+    <img class="lightbox__img" src="" alt="">
+  </div>
 
   <section id="reservar" class="sec sec--alt">
     <div class="wrap">
@@ -135,7 +138,7 @@
           Alto Paraíso de Goiás, GO, Chapada dos Veadeiros
         </address>
         <div class="row">
-          <a class="btn btn--fill" href="https://www.google.com/maps/search/?api=1&query=Rua+Francisco+Salermo%2C+Quadra+65%2C+Lote+18%2C+Setor+Paraisinho%2C+Alto+Para%C3%ADso+de+Goi%C3%A1s">Abrir no Google Maps</a>
+          <a class="btn btn--fill" href="https://www.google.com/maps/place/Vila+Dourada+Hostel/@-14.1384388,-47.5230986,17z/data=!4m9!1m2!2m1!1srua+francisco+salermo,+q65,+l+18!3m5!1s0x93457f9b0cd16f35:0xc9fac45bc3c3b79b!8m2!3d-14.138444!4d-47.5205237!16s%2Fg%2F11ntkzlcsl?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D">Abrir no Google Maps</a>
           <a class="btn btn--tone" href="https://waze.com/ul?q=Rua%20Francisco%20Salermo%2C%20Quadra%2065%2C%20Lote%2018%2C%20Setor%20Paraisinho%2C%20Alto%20Para%C3%ADso%20de%20Goi%C3%A1s&navigate=yes">Traçar rota no Waze</a>
         </div>
       </div>
@@ -162,7 +165,7 @@
           <h3>Redes sociais</h3>
           <ul>
             <li><a class="chan" href="https://instagram.com/vila_douradaa"><b>Instagram</b><span>@vila_douradaa</span></a></li>
-            <li><a class="chan" href="https://facebook.com/vila_douradaa"><b>Facebook</b><span>/vila_douradaa</span></a></li>
+            <li><a class="chan" href="https://facebook.com/indianaria.barreto"><b>Facebook</b><span>/vila_douradaa</span></a></li>
             <li><a class="chan" href="https://tiktok.com/@vila_douradaa"><b>TikTok</b><span>@vila_douradaa</span></a></li>
             <li><a class="chan" href="https://youtube.com/@vila_douradaa"><b>YouTube</b><span>@vila_douradaa</span></a></li>
           </ul>
@@ -173,7 +176,7 @@
             <li><a class="chan" href="https://www.booking.com/"><b>Booking.com</b><span>Reserve pela plataforma</span></a></li>
             <li><a class="chan" href="https://www.hostelworld.com/"><b>Hostelworld</b><span>Reserve pela plataforma</span></a></li>
             <li><a class="chan" href="https://www.airbnb.com.br/"><b>Airbnb</b><span>Reserve pela plataforma</span></a></li>
-            <li><a class="chan" href="https://search.google.com/local/writereview?placeid=SEU_PLACE_ID"><b>Google</b><span>Deixe sua avaliação</span></a></li>
+            <li><a class="chan" href="https://www.google.com/maps/place/Vila+Dourada+Hostel/@-14.1384388,-47.5230986,17z/data=!4m6!3m5!1s0x93457f9b0cd16f35:0xc9fac45bc3c3b79b!8m2!3d-14.138444!4d-47.5205237!16s%2Fg%2F11ntkzlcsl?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"><b>Google</b><span>Deixe sua avaliação</span></a></li>
             <li><a class="chan" href="https://www.tripadvisor.com.br/"><b>TripAdvisor</b><span>Deixe sua avaliação</span></a></li>
           </ul>
         </div>
