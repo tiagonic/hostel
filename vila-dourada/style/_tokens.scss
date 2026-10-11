@@ -1,0 +1,28 @@
+// Vila Dourada — tokens de design
+// Paleta do Cerrado: dourado (ação), verde (marca), terracota (apoio), areia (superfície)
+
+$dourado: #d5a642;
+$dourado-esc: #c4932f;
+$verde: #526747;
+$verde-esc: #3b4b33;
+$verde-claro: #e4ebdc;
+$terracota: #a65e3b;
+$areia: #f1e8d6;
+$areia-clara: #faf6ec;
+$madeira: #49382d;
+$branco: #fff;
+
+$font-head: 'Google Sans', 'Outfit', system-ui, sans-serif;
+$font-body: 'Roboto', system-ui, sans-serif;
+
+$r-sm: 12px;
+$r-md: 20px;
+$r-lg: 28px;
+
+// Elevações no padrão Material / Google
+$elev1: 0 1px 2px rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+$elev2: 0 1px 3px rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
+
+@mixin up($w: 720px) {
+  @media (min-width: $w) { @content; }
+}
