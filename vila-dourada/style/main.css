@@ -472,3 +472,151 @@ h3 {
   cursor: pointer;
   line-height: 1;
 }
+
+
+/* =========================================
+   Galeria de fotografias - Carousel
+   ========================================= */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e4ebdc;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #526747;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* Botões de navegação */
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #3b4b33;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.carousel-btn:hover {
+  background: #d5a642;
+}
+
+.carousel-btn--prev {
+  left: 16px;
+}
+
+.carousel-btn--next {
+  right: 16px;
+}
+
+/* Indicadores */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 18px 12px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #b7c2ae;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.carousel-dot.active {
+  background: #526747;
+  transform: scale(1.35);
+}
+
+.carousel-dot:hover {
+  background: #d5a642;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    aspect-ratio: 4 / 3;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 26px;
+  }
+
+  .carousel-btn--prev {
+    left: 10px;
+  }
+
+  .carousel-btn--next {
+    right: 10px;
+  }
+}
+
+/* Acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .carousel-btn,
+  .carousel-dot {
+    transition: none;
+  }
+}
+
+/* Imagens da galeria */
+.carousel-slide img {
+  cursor: zoom-in;
+}
+
+/* Lightbox */
+.lightbox__img {
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+  cursor: zoom-out;
+}

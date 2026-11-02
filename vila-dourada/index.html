@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Roboto:wght@400;500&display=swap">
   <link rel="stylesheet" href="style/main.css">
   <script src="scripts/open-Lightbox.js" defer></script>
+  <script src="scripts/carousel.js" defer></script>
+  <script src="img/galeria/images.js" defer></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Hostel","name":"Vila Dourada Hostel","slogan":"Hospedagem com a essência do Cerrado","image":"img/Logo-Vila-Dourada.png","address":{"@type":"PostalAddress","streetAddress":"Rua Francisco Salermo, Quadra 65, Lote 18, Setor Paraisinho","addressLocality":"Alto Paraíso de Goiás","addressRegion":"GO","addressCountry":"BR"}}
   </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8351173060986484" crossorigin="anonymous">
-</script>
-<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8351173060986484" crossorigin="anonymous"></script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 </head>
 
 <body>
@@ -63,6 +63,46 @@
       <figure class="hero__img">
         <img src="img/hero.jpg" alt="Cachoeira e paisagem do Cerrado na Chapada dos Veadeiros" onerror="this.remove()">
       </figure>
+    </div>
+  </section>
+
+  <section id="galeria" class="sec sec--alt">
+    <div class="wrap">
+      <h2>Galeria de Fotos</h2>
+
+      <p class="lead">
+        Conheça um pouco das nossas instalações e da energia da Chapada dos Veadeiros.
+      </p>
+
+      <div
+        class="carousel-container"
+        tabindex="0"
+        role="region"
+        aria-label="Galeria de fotos da Vila Dourada Hostel"
+      >
+        <button
+          class="carousel-btn carousel-btn--prev"
+          type="button"
+          aria-label="Foto anterior"
+        >
+          &lsaquo;
+        </button>
+
+        <button
+          class="carousel-btn carousel-btn--next"
+          type="button"
+          aria-label="Próxima foto"
+        >
+          &rsaquo;
+        </button>
+
+        <div class="carousel-track" aria-live="polite">
+          <!-- Fotografias carregadas dinamicamente -->
+        </div>
+
+        <div class="carousel-dots" aria-label="Selecionar fotografia">
+        </div>
+      </div>
     </div>
   </section>
 
